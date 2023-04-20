@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="top__nav">
+      <ul class="nav__list">
+        <a class="mobile-visible mobile__menu" href="#">
+          <i class="fa-sharp fa-solid fa-bars"></i> Menu
+        </a>
+        <section class="nav nav-left mobile-invisible">
+          <li>Home</li>
+          <li>About SW</li>
+          <li>Contact Us</li>
+          <li>View Products</li>
+        </section>
+        <section class="nav nav-right">
+          <li class="mobile-invisible">
+            <i class="fa-solid fa-lock"></i> Login
+          </li>
+          <li><i class="fa-solid fa-cart-shopping"></i> View Carts</li>
+          <li class="item__counts">0 items</li>
+        </section>
+      </ul>
+      <!-- <section class="dropdown-items">
+        <li><i class="fa-solid fa-lock"></i> Login</li>
+        <br />
+        <li>Home</li>
+        <br />
+        <li>About SW</li>
+        <br />
+        <li>Contact Us</li>
+        <br />
+        <li>View Products</li>
+        <br />
+      </section> -->
+    </section>
+    <main>
+      <section class="main__header">
+        <picture class="logo">
+          <source
+            media="(min-width:1000px)"
+            srcset="./assets/sports-warehouse-logo.png"
+          />
+          <img
+            src="./assets/sports-warehouse-logo-600.png"
+            alt="logo-sports-warehouse"
+          />
+        </picture>
+        <span class="main__search">
+          <input
+            class="search__input"
+            placeholder="Search products"
+            aria-label="seach-products"
+          />
+          <i class="fa-sharp fa-solid fa-magnifying-glass search__icon"></i>
+        </span>
+      </section>
+      <nav class="nav main__nav-categories">
+        <li>
+          Shoes
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li class="active">
+          Helmets
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li>
+          Pants
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li>
+          Tops
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li>
+          Balls
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li>
+          Equipment
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+        <li>
+          Training gear
+          <i
+            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+          ></i>
+        </li>
+      </nav>
+      <section class="carousel mobile-invisible">
+        <img
+          class="carousel__image"
+          src="./assets/image 1.svg"
+          alt="carousel-1"
+        />
+        <section class="carousel__indicators">
+          <img
+            class="carousel__indicator"
+            src="./assets/circle 1.svg"
+            alt="circle1"
+          />
+          <img
+            class="carousel__indicator"
+            src="./assets/circle 2.svg"
+            alt="circle2"
+          />
+          <img
+            class="carousel__indicator"
+            src="./assets/circle 2.svg"
+            alt="circle3"
+          />
+        </section>
+        <section class="carousel__description">
+          <span>View our brand new range of</span>
+          <span class="product">Sports balls</span>
+          <button class="shop__button">Shop now</button>
+        </section>
+      </section>
+      <section class="main__banner">Featured products</section>
+      <section class="gallery tx-center">
+        <div class="gallery__card">
+          <img
+            class="gallery__image"
+            src="./assets/soccer-ball.svg"
+            alt="soccer-ball"
+          />
+          <p class="product__price">
+            <span class="price-discount">$34.95</span>
+            <span class="tx-small">was</span>
+            <span class="price-origin">$46.00</span>
+          </p>
+          <p class="product__name">adidas Euro16 Top Soccer Ball</p>
+        </div>
+        <div class="gallery__card">
+          <img
+            class="gallery__image"
+            src="./assets/skate-helmet.svg"
+            alt="skate-helmet"
+          />
+          <p class="product__price">$70.00</p>
+          <p class="product__name">Pro-tec Classic Skate Helmet</p>
+        </div>
+        <div class="gallery__card product-selected">
+          <img
+            class="gallery__image"
+            src="./assets/water-bottle.svg"
+            alt="water-bottle"
+          />
+          <p class="product__price">
+            <span class="price-discount">$15.00</span>
+            <span class="tx-small">was</span>
+            <span class="price-origin">$17.50</span>
+          </p>
+          <p class="product__name">Nike Sport 600ml Water Bottle</p>
+        </div>
+        <div class="gallery__card">
+          <img
+            class="gallery__image"
+            src="./assets/boxing-gloves.svg"
+            alt="boxing-gloves"
+          />
+          <p class="product__price">$79.95</p>
+          <p class="product__name">Sting ArmaPlus Boxing Gloves</p>
+        </div>
+        <div class="gallery__card">
+          <img
+            class="gallery__image"
+            src="./assets/football-boots.svg"
+            alt="football-boots"
+          />
+          <p class="product__price">$160.00</p>
+          <p class="product__name">
+            Asics Gel Lethal Tigreor 8 IT Men's FG Boots
+          </p>
+        </div>
+      </section>
+      <section class="main__banner">Our brands and partnerships</section>
+      <section class="topbrands">
+        <div class="topbrands__description">
+          <div>These are some of our top brands and partnerships.</div>
+          <a class="topbrands__description-link" href="#">
+            The best of the best is here.
+          </a>
+        </div>
+        <div class="topbrands__links">
+          <img src="./assets/logo_nike.svg" alt="logo_nike" />
+          <img src="./assets/logo_adidas.svg" alt="logo_adidas" />
+          <img src="./assets/logo_skins.svg" alt="logo_skins" />
+          <img src="./assets/logo_asics.svg" alt="logo_asics" />
+          <img src="./assets/logo_newbalance.svg" alt="logo_newbalance" />
+          <img src="./assets/logo_wilson.svg" alt="logo_wilson" />
+        </div>
+      </section>
+    </main>
+    <section class="bottom__nav">
+      <nav class="bottom__nav-flex site__nav">
+        <h3>Site navigation</h3>
+        <ul class="nav">
+          <li><span class="dots"></span> Home</li>
+          <li><span class="dots"></span> About SW</li>
+          <li><span class="dots"></span> Contact Us</li>
+          <li><span class="dots"></span> View Products</li>
+          <li><span class="dots"></span> Privacy Policy</li>
+        </ul>
+      </nav>
+      <nav class="bottom__nav-flex mobile-invisible category__nav">
+        <h3>Product categories</h3>
+        <ul class="nav">
+          <li><span class="dots"></span>Shoes</li>
+          <li><span class="dots"></span>Helmets</li>
+          <li><span class="dots"></span>Pants</li>
+          <li><span class="dots"></span>Tops</li>
+          <li><span class="dots"></span>Balls</li>
+          <li><span class="dots"></span>Equipment</li>
+          <li><span class="dots"></span>Training Gear</li>
+        </ul>
+      </nav>
+      <nav class="bottom__nav-flex">
+        <h3>Contact Sports Warehouse</h3>
+        <ul class="nav contact">
+          <span>
+            <i class="fa-brands fa-facebook-f contact__icon"></i>
+            <li class="tx-center">Facebook</li>
+          </span>
+          <span>
+            <i class="fa-brands fa-twitter contact__icon"></i>
+            <li class="tx-center">Twitter</li>
+          </span>
+          <span>
+            <i class="fa-sharp fa-solid fa-paper-plane contact__icon"></i>
+            <span>
+              <li class="tx-center">Other</li>
+              <span class="mobile-invisible">
+                <li class="tx-center contact-other">Online form</li>
+                <li class="tx-center contact-other">Email</li>
+                <li class="tx-center contact-other">Phone</li>
+                <li class="tx-center contact-other">Address</li>
+              </span>
+            </span>
+          </span>
+        </ul>
+      </nav>
+    </section>
+    <footer>
+      <span>&copy; Copyright 2020 Sports Warehouse.&nbsp;</span>
+      <span>All rights reserverd.&nbsp;</span>
+      <span>Website made by Awesomesauce Design.</span>
+    </footer>
+  </body>
+</html>
