@@ -310,7 +310,7 @@ footer {
   align-items: center;
 }
 
-@media (min-wdith: 320px) {
+@media (min-width: 320px) {
   .nav-left,
   .nav-right {
     column-gap: 2rem;
