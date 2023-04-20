@@ -385,6 +385,7 @@ footer {
   }
   /* Bottom Nav */
   .bottom__nav {
+    font-size: 0.95rem;
     flex-direction: row;
   }
   .bottom__nav-flex {
