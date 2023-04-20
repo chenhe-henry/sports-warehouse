@@ -21,25 +21,25 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="top__nav">
-      <ul class="nav__list">
+    <div class="top__nav">
+      <nav class="nav__list">
         <a class="mobile-visible mobile__menu" href="#">
           <i class="fa-sharp fa-solid fa-bars"></i> Menu
         </a>
-        <section class="nav nav-left mobile-invisible">
+        <ul class="nav nav-left mobile-invisible">
           <li>Home</li>
           <li>About SW</li>
           <li>Contact Us</li>
           <li>View Products</li>
-        </section>
-        <section class="nav nav-right">
+        </ul>
+        <ul class="nav nav-right">
           <li class="mobile-invisible">
             <i class="fa-solid fa-lock"></i> Login
           </li>
           <li><i class="fa-solid fa-cart-shopping"></i> View Carts</li>
           <li class="item__counts">0 items</li>
-        </section>
-      </ul>
+        </ul>
+      </nav>
       <!-- <section class="dropdown-items">
         <li><i class="fa-solid fa-lock"></i> Login</li>
         <br />
@@ -52,9 +52,9 @@
         <li>View Products</li>
         <br />
       </section> -->
-    </section>
+    </div>
     <main>
-      <section class="main__header">
+      <div class="main__header">
         <picture class="logo">
           <source
             media="(min-width:1000px)"
@@ -73,82 +73,84 @@
           />
           <i class="fa-sharp fa-solid fa-magnifying-glass search__icon"></i>
         </span>
-      </section>
-      <nav class="nav main__nav-categories">
-        <li>
-          Shoes
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li class="active">
-          Helmets
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li>
-          Pants
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li>
-          Tops
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li>
-          Balls
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li>
-          Equipment
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
-        <li>
-          Training gear
-          <i
-            class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
-          ></i>
-        </li>
+      </div>
+      <nav>
+        <ul class="nav main__nav-categories">
+          <li>
+            Shoes
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li class="active">
+            Helmets
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li>
+            Pants
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li>
+            Tops
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li>
+            Balls
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li>
+            Equipment
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+          <li>
+            Training gear
+            <i
+              class="fa-sharp fa-solid fa-angle-right icon-primary mobile-visible"
+            ></i>
+          </li>
+        </ul>
       </nav>
-      <section class="carousel mobile-invisible">
+      <div class="carousel mobile-invisible">
         <img
           class="carousel__image"
-          src="./assets/image 1.svg"
+          src="./assets/image_1.svg"
           alt="carousel-1"
         />
-        <section class="carousel__indicators">
+        <div class="carousel__indicators">
           <img
             class="carousel__indicator"
-            src="./assets/circle 1.svg"
+            src="./assets/circle_1.svg"
             alt="circle1"
           />
           <img
             class="carousel__indicator"
-            src="./assets/circle 2.svg"
+            src="./assets/circle_2.svg"
             alt="circle2"
           />
           <img
             class="carousel__indicator"
-            src="./assets/circle 2.svg"
+            src="./assets/circle_2.svg"
             alt="circle3"
           />
-        </section>
-        <section class="carousel__description">
+        </div>
+        <div class="carousel__description">
           <span>View our brand new range of</span>
           <span class="product">Sports balls</span>
           <button class="shop__button">Shop now</button>
-        </section>
-      </section>
-      <section class="main__banner">Featured products</section>
-      <section class="gallery tx-center">
+        </div>
+      </div>
+      <h3 class="main__banner">Featured products</h3>
+      <div class="gallery tx-center">
         <div class="gallery__card">
           <img
             class="gallery__image"
@@ -204,13 +206,13 @@
             Asics Gel Lethal Tigreor 8 IT Men's FG Boots
           </p>
         </div>
-      </section>
-      <section class="main__banner">Our brands and partnerships</section>
-      <section class="topbrands">
+      </div>
+      <h3 class="main__banner">Our brands and partnerships</h3>
+      <div class="topbrands">
         <div class="topbrands__description">
-          <div>These are some of our top brands and partnerships.</div>
+          <h4>These are some of our top brands and partnerships.</h4>
           <a class="topbrands__description-link" href="#">
-            The best of the best is here.
+            <h4>The best of the best is here.</h4>
           </a>
         </div>
         <div class="topbrands__links">
@@ -221,9 +223,9 @@
           <img src="./assets/logo_newbalance.svg" alt="logo_newbalance" />
           <img src="./assets/logo_wilson.svg" alt="logo_wilson" />
         </div>
-      </section>
+      </div>
     </main>
-    <section class="bottom__nav">
+    <div class="bottom__nav">
       <nav class="bottom__nav-flex site__nav">
         <h3>Site navigation</h3>
         <ul class="nav">
@@ -248,30 +250,34 @@
       </nav>
       <nav class="bottom__nav-flex">
         <h3>Contact Sports Warehouse</h3>
-        <ul class="nav contact">
-          <span>
-            <i class="fa-brands fa-facebook-f contact__icon"></i>
-            <li class="tx-center">Facebook</li>
-          </span>
-          <span>
-            <i class="fa-brands fa-twitter contact__icon"></i>
-            <li class="tx-center">Twitter</li>
-          </span>
-          <span>
-            <i class="fa-sharp fa-solid fa-paper-plane contact__icon"></i>
-            <span>
-              <li class="tx-center">Other</li>
+        <ul class="contact">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f contact__icon"></i>
+              <p class="tx-center">Facebook</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter contact__icon"></i>
+              <p class="tx-center">Twitter</p></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-sharp fa-solid fa-paper-plane contact__icon"></i>
+              <p class="tx-center">Other</p>
               <span class="mobile-invisible">
-                <li class="tx-center contact-other">Online form</li>
-                <li class="tx-center contact-other">Email</li>
-                <li class="tx-center contact-other">Phone</li>
-                <li class="tx-center contact-other">Address</li>
+                <p class="tx-center contact-other">Online form</p>
+                <p class="tx-center contact-other">Email</p>
+                <p class="tx-center contact-other">Phone</p>
+                <p class="tx-center contact-other">Address</p>
               </span>
-            </span>
-          </span>
+            </a>
+          </li>
         </ul>
       </nav>
-    </section>
+    </div>
     <footer>
       <span>&copy; Copyright 2020 Sports Warehouse.&nbsp;</span>
       <span>All rights reserverd.&nbsp;</span>

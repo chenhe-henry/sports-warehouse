@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 100%;
 }
 .tx-center {
   text-align: center;
@@ -22,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+}
+.nav__list > * {
   list-style: none;
 }
 
@@ -156,7 +157,6 @@ main {
   height: 0.7rem;
 }
 .main__nav-categories {
-  font-size: 0.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
@@ -285,6 +285,11 @@ main {
   justify-content: space-between;
   padding-right: calc(5vw - 1rem);
 }
+.contact > li > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+}
 .contact__icon {
   font-size: 2rem;
   aspect-ratio: 1/1;
@@ -320,9 +325,6 @@ footer {
 @media (min-width: 1000px) {
   .mobile-visible {
     display: none;
-  }
-  * {
-    font-size: 95%;
   }
   /* Main body */
   main {
